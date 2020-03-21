@@ -133,3 +133,33 @@ require get_template_directory() . '/inc/customizer.php';
  * Load customize pro
  */
 require_once( trailingslashit( get_template_directory() ) . 'customize-pro/class-customize.php' );
+
+/*
+ * Limit excerpt length
+ */
+
+function custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

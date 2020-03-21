@@ -1,4 +1,3 @@
-<?php /* Template Name: CustomPageT1 */ ?>
 <?php get_header(); ?>
 <?php echo do_shortcode("[slick-slider design='design-1']") ?>
 <div class="main-container">
