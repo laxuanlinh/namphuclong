@@ -5,6 +5,7 @@
 		<div class="content-area">
 			<div class="middle-align">
 				<? echo do_shortcode("[woocommerce_cart]") ?>
+				aaaa
 			</div>
 		</div>
 	</div>	

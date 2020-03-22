@@ -10,13 +10,16 @@
 </div><!-- main-container -->
 
 <div class="copyright-wrapper">
-        	<div class="container">
-                <div class="copyright">
-                    	<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php esc_attr(bloginfo( 'name' )); ?>  <?php echo esc_attr(date_i18n( __( 'Y', 'greenhouse' ) )); ?> <?php esc_html_e('. Powered by WordPress','greenhouse'); ?></p>               
-                </div><!-- copyright --><div class="clear"></div>           
-            </div><!-- container -->
+	<div class="container">
+        <div class="copyright">
+            	<p>
+            		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php esc_attr(bloginfo( 'name' )); ?>  <?php echo esc_attr(date_i18n( __( 'Y', 'greenhouse' ) )); ?> <?php esc_html_e('. Powered by WordPress','greenhouse'); ?>
+            	</p>               
+            </div>
+            <div class="clear"></div>           
         </div>
     </div>
+</div>
         
 <?php wp_footer(); ?>
 

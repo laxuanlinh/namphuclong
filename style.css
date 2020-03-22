@@ -786,6 +786,7 @@ a.btn{
     background-image: linear-gradient(90deg, #000, transparent);
 }
 
+/*Fix checkout*/
 .woocommerce-billing-fields .form-row, .woocommerce-shipping-fields .form-row,.woocommerce form .form-row {
 display: block;
 }
@@ -794,6 +795,27 @@ display: block;
 max-width: unset;
 }
 
+
+/*Shop*/
+.woocommerce ul.products li.product a img{
+    height: 300px !important;
+    overflow: hidden;
+}
+
+/*Footer*/
+.copyright-wrapper {
+    float: left;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    text-align: center;
+}
+
+/*Home product*/
+#home-product > img{
+    height: 200px;
+}
 
 
 

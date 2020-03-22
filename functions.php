@@ -143,6 +143,7 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+// Support woocommerce
 function mytheme_add_woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
@@ -150,7 +151,14 @@ function mytheme_add_woocommerce_support() {
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
 
-
+//product detail template
+add_filter( 'template_include', 'custom_single_product_template_include', 50, 1 );
+function custom_single_product_template_include( $template ) {
+    if ( is_singular('product') && (has_term( 'custom', 'product_cat')) ) {
+        $template = get_stylesheet_directory() . '/product-detail.php';
+    } 
+    return $template;
+}
 
 
 
